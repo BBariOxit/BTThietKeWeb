@@ -1,0 +1,13 @@
+html {
+    font-size: 62.5%;
+}
+.main {
+    margin: 20px;
+    font-size: 1.8rem;
+}
+.w3img {
+    height: 50px;
+}
+.footer-main {
+    display: flex;
+}

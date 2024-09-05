@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-main">
+                <div class="logo">
+                    <a href=""><img class="w3img" src="./img/tải xuống.png" alt=""></a>
+                </div>
+                <div class="top-page-left">
+                    <ul>
+                        <li>Tutorials
+                            <i class="fa-solid fa-caret-down"></i>
+                        </li>
+                        <li>Exercises
+                            <i class="fa-solid fa-caret-down"></i>
+                        </li>
+                        <li>Certificates
+                            <i class="fa-solid fa-caret-down"></i>
+                        </li>
+                        <li>Services
+                            <i class="fa-solid fa-caret-down"></i>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="search">
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-toggle-on"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-page-right">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-code"></i>
+                            Spaces
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Get Certified
+                        </li>
+                        <li>
+                            <div class="W3Button">
+                                <button>
+                                    Sign up
+                                </button>
+                                <button>
+                                    Login
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-nav">
+                <ul class="list">
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">cSS</a></li>
+                    <li><a href="">JAVASCRIPT</a></li>
+                    <li><a href="">SQL</a></li>
+                    <li><a href="">PYTHON</a></li>
+                    <li><a href="">JAVA</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">C</a></li>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">C#</a></li>
+                    <li><a href="">BOOSTRAP</a></li>
+                    <li><a href="">REACT JS</a></li>
+                    <li><a href="">VUE JS</a></li>
+                    <li><a href="">ANGULAR JS</a></li>
+                    <li><a href="">MY SQL</a></li>
+                    <li><a href="">JQUERY</a></li>
+                    <li><a href="">DJANGO</a></li>
+                    <li><a href="">NODE JS</a></li>
+                    <li><a href="">TYPE SCRIPT</a></li>
+                    <li><a href="">MOGNGODB</a></li>
+                    <li><a href="">R</a></li>
+                    <li><a href="">GIT</a></li>
+                    <li><a href="">ASP</a></li>
+                    <li><a href="">SASS</a></li>
+                    <li><a href="">GO</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="msg">
+                <h1>JavaScript Callbacks</h1>
+            </div>
+            <div class="previous-next">
+                <button>
+                    <i class="fa-solid fa-caret-left"></i>
+                    Previous
+                </button>
+                <button>
+                    <i class="fa-solid fa-caret-right"></i>
+                    Next
+                </button>
+            </div>
+            <div class="ssentence">
+                <pre>
+                                "I will call back later!"
+
+            A callback is a function passed as an argument to another function
+
+                This technique allows a function to call another function
+
+            A callback function can run after another function has finished
+                </pre>
+            </div>
+            <div class="content-main">
+                <div class="Function-Sequence">
+                    <div class="content-main-msg">
+                        <h2>Function Sequence</h2>
+                        <p>JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.</p>
+                        <p>This example will end up displaying "Goodbye":</p>
+                    </div>
+                    <div class="content-main-examples">
+                        <h2>Example</h2>
+                        <div class="content-main-examples-code">
+                            <pre>
+                                function myFirst() {
+                                    myDisplayer("Hello");
+                                  }
+                                  
+                                  function mySecond() {
+                                    myDisplayer("Goodbye");
+                                  }
+                                  
+                                  myFirst();
+                                  mySecond();
+                            </pre>
+                        </div>
+                        <button>Try it yourself
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                    <div class="content-main-msg">
+                        <p>This example will end up displaying "Hello":</p>
+                    </div>
+
+                    <div class="content-main-examples">
+                        <h2>Example</h2>
+                        <div class="content-main-examples-code">
+                            <pre>
+                                function myFirst() {
+                                    myDisplayer("Hello");
+                                  }
+                                  
+                                  function mySecond() {
+                                    myDisplayer("Goodbye");
+                                  }
+                                  
+                                  mySecond();
+                                  myFirst();
+                            </pre>
+                        </div>
+                        <button>Try it yourself
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="Sequence-Control">
+                    <div class="content-main-msg">
+                        <h1>Sequence Control</h1>
+                        <p>Sometimes you would like to have better control over when to execute a function.</p>
+                        <p>Suppose you want to do a calculation, and then display the result.</p>
+                        <p>You could call a calculator function (myCalculator), save the result, and then call another function (myDisplayer) to display the result:</p>
+                    </div>
+                    <div class="content-main-examples">
+                        <h2>Example</h2>
+                        <div class="content-main-examples-code">
+                            <pre>
+                                function myDisplayer(some) {
+                                    document.getElementById("demo").innerHTML = some;
+                                  }
+                                  
+                                  function myCalculator(num1, num2) {
+                                    let sum = num1 + num2;
+                                    return sum;
+                                  }
+                                  
+                                  let result = myCalculator(5, 5);
+                                  myDisplayer(result);
+                            </pre>
+                        </div>
+                        <button>Try it yourself
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                    <div class="content-main-msg">
+                        <p>Or, you could call a calculator function (myCalculator), and let the calculator function call the display function (myDisplayer):</p>
+                    </div>
+                    <div class="content-main-examples">
+                        <h2>Example</h2>
+                        <div class="content-main-examples-code">
+                            <pre>
+                                function myDisplayer(some) {
+                                    document.getElementById("demo").innerHTML = some;
+                                  }
+                                  
+                                  function myCalculator(num1, num2) {
+                                    let sum = num1 + num2;
+                                    myDisplayer(sum);
+                                  }
+                                  
+                                  myCalculator(5, 5);
+                            </pre>
+                        </div>
+                        <button>Try it yourself
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                    <div class="content-main-msg">
+                        <p>The problem with the first example above, is that you have to call two functions to display the result.</p>
+                        <p>The problem with the second example, is that you cannot prevent the calculator function from displaying the result.</p>
+                        <p>Now it is time to bring in a callback.</p>
+                    </div>
+                </div>
+                <div class="advertise">
+                    <img src="./img/10830529119714233300.png" alt="">
+                </div>
+                <div class="JavaScript-Callbacks">
+                    <h2>JavaScript Callbacks</h2>
+                    <div class="content-main-note">
+                        <p>A callback is a function passed as an argument to another function.</p>
+                    </div>
+                    <div class="content-main-msg">
+                        <p>Using a callback, you could call the calculator function (myCalculator) with a callback (myCallback), and let the calculator function run the callback after the calculation is finished:</p>
+                    </div>
+                    <div class="content-main-examples">
+                        <h2>Example</h2>
+                        <div class="content-main-examples-code">
+                            <pre>
+                                function myDisplayer(some) {
+                                    document.getElementById("demo").innerHTML = some;
+                                  }
+                                  
+                                  function myCalculator(num1, num2, myCallback) {
+                                    let sum = num1 + num2;
+                                    myCallback(sum);
+                                  }
+                                  
+                                  myCalculator(5, 5, myDisplayer);
+                            </pre>
+                        </div>
+                        <button>Try it yourself
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                    <div class="content-main-msg">
+                        <p>In the example above, myDisplayer is a called a callback function.</p>
+                        <p>It is passed to myCalculator() as an argument.</p>
+                    </div>
+                    <div class="content-main-note">
+                        <h1>Note</h1>
+                        <p>When you pass a function as an argument, remember not to use parenthesis.</p>
+                        <p>Right: myCalculator(    5, 5, myDisplayer);</p>
+                        <p>Wrong:
+                            <strike>myCalculator(5, 5, myDisplayer());</strike> 
+                        </p>
+                    </div>
+                    <div class="content-main-examples">
+                        <h2>Example</h2>
+                        <div class="content-main-examples-code">
+                            <pre>
+                                // Create an Array
+                                const myNumbers = [4, 1, -20, -7, 5, 9, -6];
+
+                                // Call removeNeg with a callback
+                                const posNumbers = removeNeg(myNumbers, (x) => x >= 0);
+
+                                // Display Result
+                                document.getElementById("demo").innerHTML = posNumbers;
+
+                                // Keep only positive numbers
+                                function removeNeg(numbers, callback) {
+                                    const myArray = [];
+                                    for (const x of numbers) {
+                                      if (callback(x)) {
+                                        myArray.push(x);
+                                      }
+                                    }
+                                    return myArray;
+                                  }
+                            </pre>
+                        </div>
+                        <button>Try it yourself
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                    <div class="content-main-msg">
+                        <p>In the example above, (x) => x >= 0 is a callback function.</p>
+                        <p>It is passed to removeNeg() as an argument.</p>
+                    </div>
+                </div>
+                <div class="WhenToUse">
+                    <h2>When to Use a Callback?</h2>
+                    <p>The examples above are not very exciting.</p>
+                    <p>They are simplified to teach you the callback syntax.</p>
+                    <p>Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).</p>
+                    <p>Asynchronous functions are covered in the next chapter.</p>
+                </div>
+            </div>
+            <div class="previous-next">
+                <button>
+                    <i class="fa-solid fa-caret-left"></i>
+                    Previous
+                </button>
+                <button>
+                    <i class="fa-solid fa-caret-right"></i>
+                    Next
+                </button>
+            </div>
+            <div class="content-banner">
+                <div class="content-banner-msg">
+                    <pre>
+                        W3schools Pathfinder
+                    Track your progress - it's free!
+                    </pre>
+                </div>
+                <div class="W3Button">
+                    <button>
+                        Sign up
+                    </button>
+                    <button>
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="W3advertise">
+            ADVERTISEMENT
+            <img src="./img/8169744333071237861.png" alt="">
+        </div>
+
+        <div class="footer">
+            <div class="footer-head">
+                <ul>
+                    <li><a href="">SPACES</a></li>
+                    <li><a href="">UPGRADE</a></li>
+                    <li><a href="">AD-FREE</a></li>
+                    <li><a href="">NEWSLETTER</a></li>
+                    <li><a href="">GET CERTIFIED</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <div class="footer-main-Tutorial">
+                    <a href="">Top Tutorials</a>
+                    <ul class="footer-main-list">
+                        <li><a href="">HTML Tutorial</a></li>
+                        <li><a href="">CSS Tutorial</a></li>
+                        <li><a href="">JavaScript Tutorial</a></li>
+                        <li><a href="">How To Tutorial</a></li>
+                        <li><a href="">SQL Tutorial</a></li>
+                        <li><a href="">Python Tutorial</a></li>
+                        <li><a href="">W3.CSS Tutorial</a></li>
+                        <li><a href="">Bootstrap Tutorial</a></li>
+                        <li><a href="">PHP Tutorial</a></li>
+                        <li><a href="">Java Tutorial</a></li>
+                        <li><a href="">C++ Tutorial</a></li>
+                        <li><a href="">jQuery Tutorial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-main-Reference">
+                    <a href="">Top References</a>
+                    <ul class="footer-main-list">
+                        <li><a href="">HTML Reference</a></li>
+                        <li><a href="">CSS Reference</a></li>
+                        <li><a href="">JavaScript Reference</a></li>
+                        <li><a href="">How To Reference</a></li>
+                        <li><a href="">SQL Reference</a></li>
+                        <li><a href="">Python Reference</a></li>
+                        <li><a href="">W3.CSS Reference</a></li>
+                        <li><a href="">Bootstrap Reference</a></li>
+                        <li><a href="">PHP Reference</a></li>
+                        <li><a href="">Java Reference</a></li>
+                        <li><a href="">C++ Reference</a></li>
+                        <li><a href="">jQuery Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-main-Examples">
+                    <a href="">Top Examples</a>
+                    <ul class="footer-main-list">
+                        <li><a href="">HTML Examples</a></li>
+                        <li><a href="">CSS Examples</a></li>
+                        <li><a href="">JavaScript Examples</a></li>
+                        <li><a href="">How To Examples</a></li>
+                        <li><a href="">SQL Examples</a></li>
+                        <li><a href="">Python Examples</a></li>
+                        <li><a href="">W3.CSS Examples</a></li>
+                        <li><a href="">Bootstrap Examples</a></li>
+                        <li><a href="">PHP Examples</a></li>
+                        <li><a href="">Java Examples</a></li>
+                        <li><a href="">C++ Examples</a></li>
+                        <li><a href="">jQuery Examples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-main-Certificate">
+                    <a href="">Get Certified</a>
+                    <ul class="footer-main-list">
+                        <li><a href="">HTML Certified</a></li>
+                        <li><a href="">CSS Certified</a></li>
+                        <li><a href="">JavaScript Certified</a></li>
+                        <li><a href="">How To Certified</a></li>
+                        <li><a href="">SQL Certified</a></li>
+                        <li><a href="">Python Certified</a></li>
+                        <li><a href="">W3.CSS Certified</a></li>
+                        <li><a href="">Bootstrap Certified</a></li>
+                        <li><a href="">PHP Certified</a></li>
+                        <li><a href="">Java Certified</a></li>
+                        <li><a href="">C++ Certified</a></li>
+                        <li><a href="">jQuery Certified</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-infomation">
+                <div class="footer-information-link">
+                    <ul class="footer-information-link-list">
+                        <li><a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-discord"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a></li>
+                        <li><a href="">FORUM</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CLASSROOM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-infomation-info">
+                    <p>
+                        W3Schools is optimized for learning and training.
+                        Examples might be simplified to improve reading and learning.
+                        Tutorials, references, and examples are constantly reviewed
+                        to avoid errors, but we cannot warrant full correctness of
+                        all content. While using W3Schools, you agree to have read 
+                        and accepted our 
+                        <a href="">terms of use</a>
+                        ,
+                        <a href=""> cookie and privacy policy.</a>
+                    </p>
+                    <p>
+                        <a href="">Copyright 1999-2024</a>
+                        by Refsnes Data. All Rights Reserved. 
+                        <a href="">W3Schools is Powered by W3.CSS.</a>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* BAI1 */
+.container {
+    margin: 20px;
+}
+.container h1 {
+    background: -webkit-linear-gradient(#231557, #44107A, #FF1361, #FFF800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    /* margin-left: 10px; */
+    position: relative;
+    right: 0;
+    transition: right linear .3s;
+}
+.container h1:hover {
+    right: -10px;
+}
+.bai1 {
+    width: 100%;
+}
+.bai1 .content {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 15px 0;
+    /* margin: 0 15px; */
+    background-image: linear-gradient(to right,#868f96, #596164);
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    box-shadow: 15px 20px #333;
+    cursor: default;
+}
+.bai1 .content:active {
+    background-image: linear-gradient(to right,#FF057C, #7C64D5, #4CC3FF);
+}
+/* .bai1 p:last-child {
+    float: right;
+    position: relative;
+    top: 40px;
+    right: 28%;
+} */
+.director {
+    margin: 60px 0 30px 25%;
+    font-style: italic;
+    font-weight: 600;
+ }
+.bai1 p:hover {
+    background: -webkit-linear-gradient(#fa709a, #fee140);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+ }
+.bai1 h2 {
+    font-size: 4rem;
+    background: -webkit-linear-gradient( #fa709a, #fee140);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bai2 {
+    margin-top: 175px;
+}
+/* BAI2 */
+.bai2 img {
+    height: 150px;
+    border-radius: 50%;
+    border: 5px #333 solid;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+.bai2 h2 {
+    text-align: center;
+    font-size: 4rem;
+    background: -webkit-linear-gradient( #3d3393, #2b76b9, #2cacd1, #35eb93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.paragraph h3:hover {
+    background: -webkit-linear-gradient(#3d3393, #2b76b9, #2cacd1, #35eb93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+/* .bai2 .base:active {
+    background-image: linear-gradient(to right,#FF057C, #7C64D5, #4CC3FF);
+}   */
+.base {
+    font-size: 1.8rem;
+    background-color: #faf2e4;
+    border-radius: 4px;
+    border: 4px #231557 solid;
+}
+.paragraph {
+    padding: 0 0 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.paragh1 {
+    flex: 1;
+}
+.paragh2 {
+    flex: 1;
+}
+.paragh3 {
+    flex: 1;
+}
