@@ -4,10 +4,22 @@ html {
 .main {
     margin: 20px;
     font-size: 1.8rem;
+    background-color: #ccc;
+    padding: 20px;
+    font-size: 1.8rem;
+    border: 4px solid #333;
+    margin-bottom: 40px;
+    box-shadow: 2px 3px 4px #ccc;
+    border-radius: 2px;
 }
 .w3img {
     height: 50px;
 }
 .footer-main {
     display: flex;
+}
+.copyright {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
 }

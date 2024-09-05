@@ -13,3 +13,8 @@
     box-shadow: 2px 3px 4px #ccc;
     border-radius: 2px;
 }
+.copyright {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}

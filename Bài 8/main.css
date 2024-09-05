@@ -103,3 +103,8 @@
 .paragh3 {
     flex: 1;
 }
+.copyright {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
