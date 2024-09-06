@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;
+}
+.base {
+    margin: 20px;
+}
+.layout {
+    font-size: 1.8rem;
+    background-color: #ccc;
+    /* background-image: linear-gradient(to right,#868f96, #6d7274); */
+    padding: 20px;
+    font-size: 1.8rem;
+    border: 4px solid #333;
+    margin-bottom: 40px;
+    box-shadow: 2px 3px 4px #ccc;
+    border-radius: 2px;
+    /* background: -webkit-linear-gradient(#868f96, #596164);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.head-msg {
+    font-size: 2rem;
+}
+.copyright {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}  
