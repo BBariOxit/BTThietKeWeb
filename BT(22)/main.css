@@ -7,18 +7,13 @@ html {
 .layout{
     background-color: #ccc;
     padding: 20px;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     border: 4px solid #333;
     margin-bottom: 40px;
     box-shadow: 2px 3px 4px #ccc;
     border-radius: 2px;
 }
-table {
-    text-align: center;
-}
-td,th {
-    padding:0 10px;
-}
+
 .copyright {
     margin-top: 20px;
     font-size: 1.3rem;

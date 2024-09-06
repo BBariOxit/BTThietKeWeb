@@ -1,0 +1,66 @@
+html {
+    font-size: 62.5%;
+}
+.main {
+    margin: 20px;
+    background-color: #ccc;
+    padding: 20px;
+    font-size: 2.2rem;
+    border: 4px solid #333;
+    margin-bottom: 40px;
+    box-shadow: 2px 3px 4px #ccc;
+    border-radius: 2px;
+}
+.img-shop {
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px #333 solid;
+}
+th,td {
+    padding: 0 10px ;
+ }
+.copyright {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.navbar {
+    background-image: linear-gradient(to right,#f83600, #f9d423);
+    border-radius: 3px;
+    border:3px #333 solid ;
+    margin: 0;
+    box-shadow: 2px 4px 5px #333;
+}
+.navbar-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.navbar-item-link {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #333;
+    font-weight: 600;
+}
+.navbar-item-link:hover {
+    background: -webkit-linear-gradient(#e0e0e0, #efefef, #d9d9d9, #bcbcbc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.button-home {
+    background-image: linear-gradient(#f83600, #f9d423);
+    padding: 5px;
+}
+.button-home-link {
+    color: #333;
+    text-decoration: none;
+}
+.button-home:hover {    
+    background-image: linear-gradient(#d5d4d0 , #d5d4d0, #eeeeec , #efeeec , #e9e9e7) ;
+}
+.logo {
+    height: 15px;
+    border-radius: 50%;
+}
